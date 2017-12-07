@@ -10,6 +10,7 @@ function onresize(){
 
 window.addEventListener("resize", onresize);
 
+document.getElementById('locate').innerHTML = window.location.pathname;
 
 document.getElementById('re').onclick = function(event) {
     window.location.reload(true);
@@ -26,6 +27,7 @@ document.getElementById('hello').onclick = function(event) {
 
 document.getElementById('showAndHide').onclick = function myFunction() {
     var x = document.getElementById("pTwo");
+    
     if (x.style.display == "none") {
         x.style.display = "block";
     } else {
